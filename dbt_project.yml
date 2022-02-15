@@ -43,4 +43,15 @@ models:
       sats:
         tags:
           - 'satellite'
-
+    mart:
+      tags:
+        - 'mart'
+      materialized: view
+    pit:
+      tags:
+        - 'pit'
+      materialized: incremental
+    v_pit:
+      tags:
+        - 'v_pit'
+      materialized: view
